@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+	<title>widgets</title>
+	<link rel="stylesheet" href="css/stylesheet.css">
+	<link rel="stylesheet" href="css/reset.css">
+</head>
+<body>
+  <div class="main-wrapper">
+    <div class="calendar widget">
+      <div class="table-nav">
+        <a href="#"><img class="prev" src="images/previous.png"></a>
+        <h3 class="date-title">May 2014</h3>
+        <a href="#"><img class="next" src="images/next.png"></a>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Sun</th>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+            <th>Sat</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><div class="day not-current-month">29</div></td>
+            <td><div class="day not-current-month">30</div></td>
+            <td><div class="day">1</div></td>
+            <td><div class="day">2</div></td>
+            <td><div class="day current-day">3</div></td>
+            <td><div class="day">4</div></td>
+            <td><div class="day">5</div></td>
+          </tr>
+          <tr>
+            <td><div class="day">6</div></td>
+            <td><div class="day event">7</div></td>
+            <td><div class="day">8</div></td>
+            <td><div class="day">9</div></td>
+            <td><div class="day">10</div></td>
+            <td><div class="day">11</div></td>
+            <td><div class="day">12</div></td>
+          </tr>
+          <tr>
+            <td><div class="day">13</div></td>
+            <td><div class="day">14</div></td>
+            <td><div class="day">15</div></td>
+            <td><div class="day">16</div></td>
+            <td><div class="day">17</div></td>
+            <td><div class="day">18</div></td>
+            <td><div class="day">19</div></td>
+          </tr>
+          <tr>
+            <td><div class="day">20</div></td>
+            <td><div class="day">21</div></td>
+            <td><div class="day">22</div></td>
+            <td><div class="day event">23</div></td>
+            <td><div class="day">24</div></td>
+            <td><div class="day">25</div></td>
+            <td><div class="day">26</div></td>
+          </tr>
+          <tr>
+            <td><div class="day">27</div></td>
+            <td><div class="day">28</div></td>
+            <td><div class="day">29</div></td>
+            <td><div class="day">30</div></td>
+            <td><div class="day not-current-month">1</div></td>
+            <td><div class="day not-current-month">2</div></td>
+            <td><div class="day not-current-month">3</div></td>
+          </tr>
+        </tbody>
+      </table>
+      <button class="add-event" type="button">ADD EVENT</button>
+    </div>
+
+    <div class="widget destination">
+      <ul class="tab-bar">
+        <li class="current-tab tab"> 
+          <a href="#">
+            <img alt="place" src="images/eye.png"/> 
+          </a>
+        </li>
+        <li class="tab"> 
+          <a href="#">
+            <img alt="navigation" src="images/indicator.png"/> 
+          </a>
+        </li>
+          <a href="#">
+        <li class="tab"> 
+          <a href="#">
+            <img alt="best" src="images/star.png"/> 
+          </a>
+        </li>
+      </ul>
+      <article class="favourite-place">
+        <h3 class="place-title">My most favourite place in the world</h3>
+        <span class="reviews-count">154</span>
+        <a href="#"><span class="reviews">Reviews</span></a>
+        <p class="place-description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel quam nisi. Fusce in nibh tincidunt, bibendum mauris sed, egestas nibh.venenatis vehicula.
+        </p>
+        <a href="#">
+          <span class="read-more">Read more</span>
+        </a>
+      </article>
+      <div class="triangle"></div>
+      <div class="place">
+        <img alt="place" src="images/place.png"/>
+      </div>
+      <a href="#"><img class="image-reviews icon" src="images/review.png"/></a>
+      <span class="image-reviews-count count">752</span>
+      <a href="#"><img class="image-likes icon" src="images/like.png"/></a>
+      <span class="image-likes-count count">2709</span>
+    </div>
+
+    <div class="widget email-widget">
+      <form  name="email-form">
+        <div class="email-picker email-field">
+          <input class="email-input" type="text" value="Email" name="email-input">
+          <div class="emails">
+              <div class="added-email">
+                <span class="email">rick.james@mail.com</span>
+                <a href="#"><img src="images/cross.png"></a>
+              </div>
+              <div class="clear-fix"></div>
+          </div>
+          <a class="add-email email-icon" href="#"><img src="images/plus.png"></a>
+        </div>
+        <div class="attachment email-field">
+          <input class="subject" type="text" value="Subject" name="subgect">
+          <input id="attach-file" class="attach-file" type="file" name="attach-file">
+          <label class="clip email-icon" for="attach-file">
+            <img src="images/clip.png">
+          </label>
+        </div>
+        <textarea class="message email-field" rows="13" value="Message"></textarea>
+        <div class="button-to-right">
+          <button class="email-button" type="submit">SEND</button>
+        </div>
+      </form>
+    </div>
+    
+    <div class="widget booking-widget">
+      <div class="hotel-wrapper">
+        <img src="images/hotel.png">
+        <div class="hotel-caption">
+          <h3 class="hotel-name">Hotel Relais</h3>
+          <img class="indicate" src="images/booking-indicator.png">
+          <span class="address">Paris, France</span>
+        </div>  
+      </div>
+      <form  name="booking-form">
+        <dl>
+          <dt>
+            <label>Check in</label>
+          </dt>
+            <dd>
+              <input class="date booking-field" type="text" value="9 July, 2016" name="subgect" disabled>
+              <div class="drop-down">
+                <a href="#"><img src="images/calendar.png"></a>
+              </div>
+            </dd>
+          <dt>
+            <label>Check out</label>
+          </dt>
+            <dd>
+              <input class="date booking-field" type="text" value="16 July, 2016" name="subgect" disabled>
+              <div class="drop-down">
+                <a href="#"><img src="images/calendar.png"></a>
+              </div>
+            </dd>
+        </dl>
+        <div class="flexible-dates">
+          <input class="bookining-checkbox" type="checkbox" name="bookining-checkbox">
+          <label>Flexible dates</label>
+        </div>
+        <div class="half-row">
+          <dl>
+            <dt>
+              <label>Adults</label>
+            </dt>
+              <dd>
+                <input class="count booking-field" type="text" value="2" name="subgect" disabled>
+                <div class="drop-down">
+                  <a href="#"><img src="images/drop-down.png"></a>
+                </div>
+              </dd>
+          </dl>
+        </div>
+        <div class="half-row children-row">
+          <dl>
+            <dt>
+              <label>Children</label>
+            </dt>
+              <dd>
+                <input class="count booking-field" type="text" value="1" name="subgect" disabled>
+                <div class="drop-down">
+                  <a href="#"><img src="images/drop-down.png"></a>
+                </div>
+              </dd>
+          </dl>
+        </div>
+        <button class="booking-button" type="submit">
+          <div class="button-caption">
+            <img src="images/search.png" alt="search">
+            <span>SEARCH ROOMS</span>
+          </div>
+        </button>   
+      </form>
+    </div>
+
+    <div class="widget graphic-widget">
+      <form class = "graphic" name = "graphic">
+        <ul>
+          <li class="mark">40</li>
+          <li class="mark">30</li>
+          <li class="mark">20</li>
+          <li class="mark">0</li>
+        </ul>
+        <dl>
+          <dt class = "day-title week-day mon-dt">Mon</dt>
+            <dd class = "day-graphic week-day mon">
+              <a href="" style = "height: 49px;">
+                <div class = "value"></div>
+              </a>
+            </dd>
+          <dt class = "day-title week-day tues-dt">Tues</dt>
+            <dd class = "day-graphic week-day tues">
+              <a href="" style = "height: 61px;">
+                <div class = "value"></div>
+              </a>
+            </dd>
+          <dt class = "day-title week-day wed-dt">Wed</dt>
+            <dd class = "day-graphic week-day wed">
+              <a href="" style = "height: 119px;">
+                <div class = "value"></div>
+              </a>
+            </dd>
+          <dt class = "day-title week-day thu-dt">Thu</dt>
+            <dd class = "day-graphic week-day thu">
+              <a href="" style = "height: 158px;">
+                <div class = "value"></div>
+              </a>
+            </dd>
+          <dt class = "day-title week-day fri-dt">Fri</dt>
+            <dd class = "day-graphic week-day fri">
+              <a href="" style = "height: 129px;">
+                <div class = "value"></div>
+              </a>
+            </dd>
+          <dt class = "day-title week-day sat-dt">Sat</dt>
+            <dd class = "day-graphic week-day sat">
+              <a href="" style = "height: 169px;">
+                <div class = "value"></div>
+              </a>
+            </dd>
+          <dt class = "day-title week-day sun-dt">Sun</dt>
+            <dd class = "day-graphic week-day sun">
+              <a href="" style = "height: 143px;">
+                <div class = "value"></div>
+              </a>
+            </dd>
+        </dl>
+      </form>
+    </div>    
+  </div>
+</body>
+</html>

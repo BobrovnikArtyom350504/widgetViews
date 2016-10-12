@@ -1,0 +1,566 @@
+html, body 
+  height: 100%;
+}
+
+img {text-decoration: none; border: 0px}
+
+
+.main-wrapper {
+  position: relative;
+}
+
+.widget {
+  position: relative;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 15px;
+  margin-left: 15px;
+} 
+
+.calendar {
+  width: 346px;
+}
+
+  .calendar .table-nav {
+    height: 62px;
+    background-color: #404a58;
+    color: white;
+  }
+
+  .calendar .prev {
+    margin-left: 39px;
+  }
+
+  .date-title {
+    display: inline-block;
+    font-size: 17px;
+    font-weight: normal;
+    margin-left: 77px;
+  }
+
+  .calendar .next {
+    margin-left: 80px; 
+  }
+
+  .calendar table {
+    padding: 11px 29px 17px; 
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .calendar th {
+    height: 39px;
+  }
+
+  .calendar td {
+    width: 39px;
+    height: 39px;
+  }
+
+  .add-event {
+    width: 300px;
+    height: 60px;
+    display: block;
+    margin: 0 auto 24px;
+    border-radius: 5px;
+    background-color: #fb6362;
+    color: white;
+    font-size: 15px;
+  }
+
+  .table-nav:before, .day:before {
+    content: "";
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .day {
+    height: 100%;
+  }
+
+  .not-current-month {
+    color: #c5c5c5;
+  }
+
+  .current-day {
+    border-radius: 100%;
+    background-color: #fb6362;
+    font-weight: bolder;
+    color: white;
+  }
+
+  .event {
+    color: #fb6362;
+  }
+
+.destination {
+  max-width: 793px;
+  margin-bottom: 20px;
+}
+
+  .destination .tab-bar {
+    list-style-type: none; 
+    float: left;
+  }
+
+  .tab {
+    width: 73px;
+    height: 113px;
+    background-color: #404a58;  
+    position: relative;
+    border-bottom: 1px black solid;
+  }
+
+    .tab a {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+  .destination .current-tab {
+    background-color: #fb6362;
+  }
+
+    .destination .tab img {
+      position: absolute;
+      display: inline-block;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+    }
+
+  .favourite-place {
+    float: left;
+    padding: 29px 33px 0;
+    max-width: 291px;
+    height: 310px;
+  }
+
+    .place-title {
+      max-width: 200px;
+      line-height: 28px;
+      font-weight: bolder;
+      font-size: 20px;
+      padding-bottom: 11px; 
+    }
+
+    .reviews-count {
+      font-size: 15px;
+    }
+
+    .reviews {
+      font-size: 14px;
+      color: #a0a0a0;
+    }
+
+    .place-description {
+      margin-top: 28px;
+      margin-bottom: 19px;
+      font-size: 15px;
+      color: #c9c9c9;
+    }
+
+    .read-more {
+      color: #fb6362;
+      font-size: 13.5px;
+    }
+
+  .triangle {
+    float: left;
+    margin-top: 40px;
+    border-style: solid;
+    border-width: 20px 0 20px 20px;
+    border-color: transparent transparent transparent white;
+    position: relative;
+  }
+
+  .place {
+    margin-left: -20px;
+    float: left;
+    overflow: hidden;
+    max-height: 341.5px; 
+  }
+
+    .place img {
+      margin-top: -22px;
+    }
+
+  .image-reviews {
+    right: 165px;
+  }
+
+  .image-likes {
+    right: 82px;
+  }
+
+  .destination .icon {
+    position: absolute;
+    bottom: 23px;
+  }
+
+  .destination .count {
+    position: absolute;
+    bottom: 25px;
+    color: white;
+  }
+
+  .image-reviews-count {
+    right: 125px;
+  } 
+
+  .image-likes-count {
+    right: 27px;
+  } 
+
+.email-widget {
+  padding: 25px 25px;
+  display: inline-block;  
+}
+  .email-field {
+    position: relative;
+    margin-bottom: 26px;
+  }
+
+  .emails {
+    margin-top: -44px; 
+    width: 329px;
+    margin-left: 1px;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #b1b1b1;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  }
+
+  .email-input {
+    position: relative;
+    z-index: -1;
+  }
+
+  .added-email {
+    float: left;
+    background-color: #404a58;
+    height: 38px;
+    margin: 3px;
+    padding: 11px 10px;
+    box-sizing: border-box;
+    color: white;
+    font-weight: normal;
+    font-size: 14px;
+  }
+
+  .clear-fix {
+    clear: both;
+  }
+
+  .added-email img {
+    margin-left: 3px;
+  }
+
+  .email-icon {
+    position: absolute;
+    top: 15px;
+    right: 12px;
+    cursor: pointer;
+  }
+
+  .attach-file {
+    display: none;
+  }
+
+  .email-widget input, .email-widget textarea {
+    width: 330px;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #b1b1b1;
+    border-radius: 3px;
+  }
+
+  .email-widget input {
+    min-height: 44px;
+    padding-left: 12px;
+    padding-right: 36px;
+  }
+
+  .message {
+    resize: none;
+    padding: 0 12px;
+    margin-bottom: 30px;
+  }
+
+  .button-to-right {
+    position: relative;
+  }
+
+  .email-button {
+    width: 130px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #fb6362;
+    color: white;
+    display: block;
+    font-size: 14px;
+    font-weight: bolder;
+    float: right;
+  }
+
+.booking-widget {
+  max-width: 347px;
+}
+
+  .hotel-caption {
+    position: absolute;
+    left: 25px;
+    top: 118px;
+    color: white;
+  }  
+
+  .hotel-name {
+    font-size: 24px;
+    font-weight: bolder;
+  }
+
+  .indicate {
+    max-width: 12px;
+  }
+
+  .address {
+    font-size: 14px;
+  }
+
+  .booking-widget dl {
+    padding: 10px 23px;
+    font-weight: bolder;
+  }
+
+    .booking-widget dt {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    .booking-widget dd {
+      margin-top: 10px;
+      margin-left: 3px;
+      position: relative;
+    }
+
+      .drop-down {
+        height: 38px;
+        width: 38px;
+        border-radius: 3px;
+        position: absolute;
+        top: 4px;
+        right: 4px;
+        background-color: #414b59;
+      }
+
+        .drop-down a {
+          display: block;
+          width: 100%;
+          height: 100%;
+        }
+
+          .drop-down img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            margin: auto;
+          }
+
+  .booking-field {
+    height: 42px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-weight: bolder;
+    font-size: 14px;
+  }
+
+  .flexible-dates {
+    margin-top: -4px;
+    margin-bottom: 5px;
+    padding-left: 31px; 
+  }
+    .flexible-dates label {
+      font-size: 14px;
+      font-weight: bolder;
+      margin-left: 9px;
+      display: inline-block;
+    }
+
+    .bookining-checkbox {
+      -webkit-transform: scale(2);
+      -ms-transform: scale(2);
+    }
+
+  .date {
+    width: 282px;
+  }
+
+  .count {
+    width: 125px;
+  }
+
+  .half-row {
+    float: left;
+    margin-left: 22px;
+  }
+
+    .half-row dl {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+  .children-row {
+    margin-left: 15px;
+  }
+
+  .booking-button {
+    width: 297px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: #fb6362;
+    color: white;
+    margin: 17px 25px 25px 25px;
+    display: inline-block;
+  }
+
+    .button-caption {
+      margin: 0 auto;
+      font-size: 16px;
+    }
+
+    .button-caption img {
+      margin-right: 3px;
+    }
+
+.graphic-widget {
+  width: 791px;
+  height: 340px;
+  font-size: 14px;
+  position: relative;
+}
+
+  .mark {
+    margin: 0 auto;
+    width: 712px;
+    height: 69px;
+    box-sizing: border-box;
+    border-color: #C1C1C1;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    position: relative;
+    color: #666;
+    list-style: none;
+  }
+
+  .mark:before {
+    content: "";
+    height: 100%;
+    display: inline-block;
+    vertical-align: bottom;
+  }
+
+  .week-day {
+    display: block;
+    position: absolute;
+    bottom: 170px;
+  }
+
+  .mon {
+    left: 103px;
+  }
+  .tues {
+    left: 135px;
+  }
+  .wed {
+    left: 167px;
+  }
+  .thu {
+    left: 199px;
+  }
+  .fri {
+    left: 227px;
+  }
+  .sat {
+    left: 260px;
+  }
+  .sun {
+    left: 290px;
+  }
+
+  .graphic-widget .mon-dt {
+    left: 113px;
+  }
+  .graphic-widget .tues-dt {
+    left: 205px;
+  }
+  .graphic-widget .wed-dt {
+    left: 300px;
+  }
+  .graphic-widget .thu-dt {
+    left: 390px;
+  }
+  .graphic-widget .fri-dt {
+    left: 485px;
+  }
+  .graphic-widget .sat-dt {
+    left: 575px;
+  }
+  .graphic-widget .sun-dt {
+    left: 665px;
+  }
+
+  .day-graphic {
+    display: inline-block;
+    position: relative;
+  }
+
+    .day-graphic a {
+      display: block;
+      width: 55px;
+      background-color: #FB6362;
+      margin: 0; 
+      border-radius: 2px;
+      position: relative;
+    }
+
+  .day-title {
+    position: absolute;
+    bottom: 40px;
+    font-size: 12px;
+    font-weight: bolder;
+  }
+
+  .value {
+    position: absolute;
+    top: -45px;
+    width: 55px;
+    height: 30px;
+    display: none;
+    background: #404A58;
+    border-radius: 2px;
+  }
+
+  .day-graphic a:hover .value {
+    display: inline-block;
+  }
+
+
+
+
+
+
+
+
+  
+
+
+
+
